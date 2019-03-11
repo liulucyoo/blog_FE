@@ -1,0 +1,90 @@
+body {
+  background: linear-gradient(
+  to bottom,
+  rgb(6,9,43) 0%,
+  rgb(30,45,75) 100%
+  );
+  font-family: 'Kirang Haerang';
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+li {
+  list-style-type: none;
+}
+  .top {
+  width: 100%;
+  height: 2.5rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+  background: linear-gradient(
+  to bottom,
+  rgb(0,0,0) 0%,
+  rgb(100,100,100) 100%
+  );
+}
+.top a {
+  display: inline-block;
+  float: left;
+  margin-left: 10%;
+}
+  #sign {
+    width: 50%;
+  height: 2.5rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  }
+  .lunbo {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 80vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 8vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 8vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+.diaryList {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #fff;
+}
+.wrap {
+  
+}
+
+textarea {
+  height: 1.5rem;
+  width: 90%;
+}
