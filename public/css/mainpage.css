@@ -10,6 +10,9 @@ body {
   padding: 0;
   color: #fff;
 }
+a {
+  color: #fff;
+}
 li {
   list-style-type: none;
 }

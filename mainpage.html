@@ -50,36 +50,13 @@
       <span th:text="${person.slogan}"> </span>
     </marquee>
   </div> 
-  <!-- <ul th:each="diary: ${diarylist}">
-      <li  th:text="${diary.content}" ></li>
-      <li  th:text="${diary.datetime}"></li>
-  </ul> -->
-  <div class="diaryList">
+
+  <div class="diaryList" th:each="diary: ${diarylist}">
     <div class="wrap">
-      <div class="content">
-      content: ...      
+      日记：<div class="content" th:text="${diary.content}" >
       </div>
-      <div class="datetime">
-        datetime: ...
+      日期：<div class="datetime" th:text="${diary.datetime}">
       </div>
-    </div>
-    <div class="message">
-      message: <textarea name="message"></textarea>
-      <button >提交</button>
-    </div>
-  </div>
-<div class="diaryList">
-    <div class="wrap">
-      <div class="content">
-      content: ...      
-      </div>
-      <div class="datetime">
-        datetime: ...
-      </div>
-    </div>
-    <div class="message">
-      message: <textarea name="message"></textarea>
-      <button>提交</button>
     </div>
   </div>
 </div>

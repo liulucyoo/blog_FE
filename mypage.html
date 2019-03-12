@@ -52,27 +52,17 @@
     <marquee>sign: 
       <span th:text="${person.slogan}"> </span>
     </marquee>
-  </div> 
-
-<!-- 
-    <ul th:each="diary: ${diarylist}">
-        <li th:text="${diary.content}" ></li>
-        <li th:text="${diary.datetime}"></li>
-        <li th:text="${diary.username}"></li>
-
-    </ul> -->
-    <div class="diaryList">
-    <div class="wrap">
-      <div class="content">
-      content: ...      
-      </div>
-      <div class="datetime">
-        datetime: ...
-      </div>
+  </div>
+  <div class="diaryList" th:each="diary: ${diarylist}">
+  <div class="wrap">
+    日记：<div class="content" th:text="${diary.content}" >
     </div>
-    <div class="username">
-      username
+    日期：<div class="datetime" th:text="${diary.datetime}">
     </div>
+    username：<div class="message" th:text="${diary.username}">
+    </div>
+  </div>
+</div>
   </div>
 </div>
   
