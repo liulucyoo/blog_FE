@@ -57,7 +57,7 @@ label {
 	}
 	menu {
 		width: 28vw;
-		height: 80vh;
+		height: 92vh;
 		border: 5px solid;
 		border-image: -webkit-linear-gradient( red, blue) 30 30;
 		border-image: -moz-linear-gradient( red, blue) 30 30;
