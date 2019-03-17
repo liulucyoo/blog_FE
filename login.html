@@ -22,13 +22,25 @@
 	        username:<input type="text" name="username"/></br>
        	 	password:<input type="password" name="password"/></br>
 	        <input type="reset" value="reset">
-	        <input type="submit" value="login">
+	        <input id="login" type="button" onclick="c()" value="login">
 	        <br/>
 	        <a href="/sign">signup</a>
 	</form>
 </menu>
   
   <script type="text/javascript" src="./public/js/skill.js">
+  </script>
+  <script type="text/javascript">
+  		// console.log($('#shopping'))
+	var btn = document.getElementById('login');
+	// console.log(btn);
+	// console.log(mytime)
+	function c(){
+		var myDate = new Date();
+		var mytime=myDate.toLocaleTimeString();     //获取当前时间
+		myDate.getMilliseconds();    //获取当前毫秒数(0-999)
+		console.log(mytime,'毫秒：',myDate.getMilliseconds());
+	}
   </script>
 </body>
 </html>
